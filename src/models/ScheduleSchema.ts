@@ -1,15 +1,21 @@
 import {Schema} from "mongoose";
 
 const ScheduleSchema = new Schema({
-    nome: {
+    
+    data: {
+         type: Date, default: Date.now,
+            required: [true, "Informe uma data futura para a realização da tarefa..."],
+        },
+    
+    tarefa: {
     type: String,
-        required: [true, "O campo nome do crédito é obrigatório!"],
+        required: [true, "É preciso informar a tarefa!"],
     },
-    valor: {
-    type: Number,
-        min: [1, "Valor mínimo R$ 1,00"],
-        required: [true, "O campo nome do crédito é obrigatório!"],
-    },
+    
+    local: {
+        type: String,
+            required: [true, "Informe a localização da tarefa a ser realizada..."],
+        },
 
 },
     {

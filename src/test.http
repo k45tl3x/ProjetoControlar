@@ -1,0 +1,14 @@
+###
+GET http://localhost:3000/ciclo/listar
+###
+GET http://localhost:3000
+###
+GET http://localhost:3000/admin/list
+###
+POST http://localhost:3000/ciclo/cadastrar
+Content-Type: application/json;
+{
+    "data": "2010/01/21"
+   
+    
+}
