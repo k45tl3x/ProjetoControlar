@@ -10,7 +10,7 @@ const AdminSchema = new Schema(
             min: ["2000-01-01", "Data mínima permitida: 01/01/2000"],
         },
         budget: [BudgetSchema],
-        scheduledebitos: [ScheduleSchema],
+        schedule: [ScheduleSchema],
 },
     {
         timestamps: true,
